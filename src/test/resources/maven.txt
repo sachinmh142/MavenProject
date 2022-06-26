@@ -1,0 +1,100 @@
+Maven - Build automation tool
+
+build is a version of application /spftware which is ready for testing 
+
+why we need Maven - To create build of project , helps to maintain and proper folder structure of project with the help of pom.xml , 
+                   
+
+
+pom.xml - Project object model , Its a heart of of maven 
+          1. info and configuration details are avaialable 
+          2. No need to download external jars to project , with the help of pom xml all dependencies can be downloaded 
+          
+
+maven repository - central reposotory where we download all depenndency which are necessary 
+
+
+
+Flow of dependency add
+___________________________
+
+pom.xml ----> maven central repo -----> maven dependency [local repo] 
+
+
+
+______________________________________________________________________________________________________________________________________________
+
+
+Maven   
+
+lifecycle  --> phases --> plugin --> Goal                             
+-----------
+lifecycle 
+
+build life cycle
+
+clean life cycle
+
+site life cycle
+
+
+
+_______________________________
+
+build life cycle has following phases - validate ,compile ,test ,package, install phases 
+                                         all phases associated with plugins means 
+                                         for compile phase - compiler plugin 
+                                         for test phase - surefire plugin [test cases execution]
+                                         for package phase - war/jar[java archive plugin]/ear[enterprise archive plugin] etc plugin
+
+
+
+__________________________________________________
+
+Goal - with the help of goal all phases works like  , to test phase  we use test as goal 
+                                                      to compile phase we use compile test goal 
+
+
+
+
+
+
+
+
+
+*****************************************************************************************************************
+
+Clean life Cycle - phases -> pre clean , clean and post clean 
+
+*****************************************************************************************************************
+
+Site life Cycle - phases  -> pre site , site and post site 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+maven configuration in machine 
+
+Google it - https://maven.apache.org/download.cgi
+            binary zip archive 
+
+Setup the  system variable :  MAVEN_HOME -> path of the maven C:\Program Files\Maven\Maven
+             path - %MAVEN_HOME%\bin -> path of the maven C:\Program Files\Maven\Maven\bin
+
+
+******************************************************************************************************************
+
+Artifact iD - project name
+group id - 
+
+
+
+if issue with command prompt like 
+
+ (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+ 
+ download jdk 18 and update the path in sys varibale
+
+
+
+
